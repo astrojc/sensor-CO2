@@ -8,5 +8,7 @@ Componentes:
 
 El código fuente lo puedes descargar en: https://github.com/astrojc/sensor-CO2/blob/master/MHZ19_con_Display.ino
 
+Se puede alimentar con una Powerbank directamente a través del puerto microUSB del NodeMCU.
+
 <img src="/MH-Z19B Sketch_bb.png" align="center">
 
