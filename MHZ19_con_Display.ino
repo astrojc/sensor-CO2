@@ -17,9 +17,6 @@ int ValorPrev = LOW;            // Estado del precalentamiento
 long T_high, T_low, tth, ttl;   // Para el cálculo de la concentración de CO2
 long ppm = 0;                   // Concentración de CO2 
 
-// Otros
-#define TIEMPO_ENTRE_MEDIDAS  2000 // Milisegundos entre medidas
-
 // Función de interrupción. Se ejecuta cada vez que se detecta un cambio en el pin PWM
 // Se pone ICACHE_RAM_ATTR para correr la interrupción en RAM (necesario en NodeMCU)
 ICACHE_RAM_ATTR void PWM_ISR() {
@@ -114,5 +111,5 @@ void loop() {
   }
 
   // Retardo entre medidas
-  delay(TIEMPO_ENTRE_MEDIDAS);
+  delay(1000);
 }
