@@ -102,8 +102,7 @@ void loop() {
 
   if (t_precalentamiento > 0) {
     // Si no se ha precalentado -> esperamos cuenta atrás
-    display_PreCal(t_precalentamiento);
-    t_precalentamiento--;
+    display_PreCal(t_precalentamiento--);
   }
   else {
     // Si se ha precalentado -> medimos
